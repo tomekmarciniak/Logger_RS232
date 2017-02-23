@@ -1,0 +1,11 @@
+# CDT-specific
+.cproject
+.project
+
+[Dd]ebug/
+.xml
+build.xml
+debug.xml
+link.ld
+memory.ld
+
