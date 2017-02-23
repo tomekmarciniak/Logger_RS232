@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dependencies>
+   <includePath signature="/I. /Icmsis /Ilpc17xx_lib /Ilpc17xx_lib\include /Icmsis_boot">
+      <source file="..\..\main.c" lastModified="13364945f0c">
+         <include file="..\..\cmsis_boot\LPC17xx.h"/>
+         <include file="..\..\lpc17xx_lib\include\lpc_types.h"/>
+         <include file="..\..\lpc17xx_lib\include\uart.h"/>
+      </source>
+      <source file="..\..\syscalls\syscalls.c" lastModified="1336490226e">
+      </source>
+      <source file="..\..\lpc17xx_lib\source\uart.c" lastModified="13364945f28">
+         <include file="..\..\cmsis_boot\LPC17xx.h"/>
+      </source>
+      <source file="..\..\lpc17xx_lib\include\lpc_types.h" lastModified="13364901ef5">
+      </source>
+      <source file="..\..\lpc17xx_lib\source\lpc17xx_libcfg_default.c" lastModified="13364901b11">
+         <include file="..\..\lpc17xx_lib\include\lpc17xx_libcfg_default.h"/>
+      </source>
+      <source file="..\..\cmsis_boot\LPC17xx.h" lastModified="133649023d4">
+         <include file="..\..\cmsis\core_cm3.h"/>
+         <include file="..\..\cmsis_boot\system_LPC17xx.h"/>
+      </source>
+      <source file="..\..\cmsis_boot\startup\startup_LPC17xx.c" lastModified="133649023d9">
+      </source>
+      <source file="..\..\cmsis_boot\system_LPC17xx.h" lastModified="133649027dd">
+      </source>
+      <source file="..\..\cmsis\core_cm3.h" lastModified="13364901d80">
+      </source>
+      <source file="..\..\lpc17xx_lib\include\lpc17xx_libcfg_default.h" lastModified="13364901b06">
+         <include file="..\..\lpc17xx_lib\include\lpc_types.h"/>
+      </source>
+      <source file="..\..\lpc17xx_lib\include\uart.h" lastModified="133649124d0">
+      </source>
+      <source file="..\..\cmsis_boot\system_LPC17xx.c" lastModified="133649027ca">
+         <include file="..\..\cmsis_boot\LPC17xx.h"/>
+      </source>
+      <source file="..\..\cmsis\core_cm3.c" lastModified="13364901984">
+      </source>
+   </includePath>
+</dependencies>

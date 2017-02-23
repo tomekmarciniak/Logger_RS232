@@ -1,0 +1,446 @@
+
+Debug/bin\UARTexample.elf:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00000000 <g_pfnVectors>:
+   0:	04 04 00 10 15 04 00 00 7d 04 00 00 7d 04 00 00     ........}...}...
+  10:	7d 04 00 00 7d 04 00 00 7d 04 00 00 00 00 00 00     }...}...}.......
+	...
+  2c:	7d 04 00 00 7d 04 00 00 00 00 00 00 7d 04 00 00     }...}.......}...
+  3c:	7d 04 00 00 7d 04 00 00 7d 04 00 00 7d 04 00 00     }...}...}...}...
+  4c:	7d 04 00 00 7d 04 00 00 7d 04 00 00 7d 04 00 00     }...}...}...}...
+  5c:	7d 04 00 00 7d 04 00 00 7d 04 00 00 7d 04 00 00     }...}...}...}...
+  6c:	7d 04 00 00 7d 04 00 00 7d 04 00 00 7d 04 00 00     }...}...}...}...
+  7c:	7d 04 00 00 7d 04 00 00 7d 04 00 00 7d 04 00 00     }...}...}...}...
+  8c:	7d 04 00 00 7d 04 00 00 7d 04 00 00 7d 04 00 00     }...}...}...}...
+  9c:	7d 04 00 00 7d 04 00 00 7d 04 00 00 7d 04 00 00     }...}...}...}...
+  ac:	7d 04 00 00 7d 04 00 00 7d 04 00 00 7d 04 00 00     }...}...}...}...
+  bc:	7d 04 00 00 7d 04 00 00 7d 04 00 00 7d 04 00 00     }...}...}...}...
+
+000000cc <SystemInit>:
+  cc:	b480      	push	{r7}
+  ce:	af00      	add	r7, sp, #0
+  d0:	4b5a      	ldr	r3, [pc, #360]	; (23c <SystemInit+0x170>)
+  d2:	f04f 0220 	mov.w	r2, #32
+  d6:	f8c3 21a0 	str.w	r2, [r3, #416]	; 0x1a0
+  da:	4b58      	ldr	r3, [pc, #352]	; (23c <SystemInit+0x170>)
+  dc:	f8d3 31a0 	ldr.w	r3, [r3, #416]	; 0x1a0
+  e0:	f003 0320 	and.w	r3, r3, #32
+  e4:	2b00      	cmp	r3, #0
+  e6:	d007      	beq.n	f8 <SystemInit+0x2c>
+  e8:	bf00      	nop
+  ea:	4b54      	ldr	r3, [pc, #336]	; (23c <SystemInit+0x170>)
+  ec:	f8d3 31a0 	ldr.w	r3, [r3, #416]	; 0x1a0
+  f0:	f003 0340 	and.w	r3, r3, #64	; 0x40
+  f4:	2b00      	cmp	r3, #0
+  f6:	d0f8      	beq.n	ea <SystemInit+0x1e>
+  f8:	4b50      	ldr	r3, [pc, #320]	; (23c <SystemInit+0x170>)
+  fa:	f04f 0203 	mov.w	r2, #3
+  fe:	f8c3 2104 	str.w	r2, [r3, #260]	; 0x104
+ 102:	4b4e      	ldr	r3, [pc, #312]	; (23c <SystemInit+0x170>)
+ 104:	f04f 0200 	mov.w	r2, #0
+ 108:	f8c3 21a8 	str.w	r2, [r3, #424]	; 0x1a8
+ 10c:	4b4b      	ldr	r3, [pc, #300]	; (23c <SystemInit+0x170>)
+ 10e:	f04f 0200 	mov.w	r2, #0
+ 112:	f8c3 21ac 	str.w	r2, [r3, #428]	; 0x1ac
+ 116:	4b49      	ldr	r3, [pc, #292]	; (23c <SystemInit+0x170>)
+ 118:	f04f 0201 	mov.w	r2, #1
+ 11c:	f8c3 210c 	str.w	r2, [r3, #268]	; 0x10c
+ 120:	4b46      	ldr	r3, [pc, #280]	; (23c <SystemInit+0x170>)
+ 122:	4a47      	ldr	r2, [pc, #284]	; (240 <SystemInit+0x174>)
+ 124:	f8c3 2084 	str.w	r2, [r3, #132]	; 0x84
+ 128:	4b44      	ldr	r3, [pc, #272]	; (23c <SystemInit+0x170>)
+ 12a:	f04f 02aa 	mov.w	r2, #170	; 0xaa
+ 12e:	f8c3 208c 	str.w	r2, [r3, #140]	; 0x8c
+ 132:	4b42      	ldr	r3, [pc, #264]	; (23c <SystemInit+0x170>)
+ 134:	f04f 0255 	mov.w	r2, #85	; 0x55
+ 138:	f8c3 208c 	str.w	r2, [r3, #140]	; 0x8c
+ 13c:	4b3f      	ldr	r3, [pc, #252]	; (23c <SystemInit+0x170>)
+ 13e:	f04f 0201 	mov.w	r2, #1
+ 142:	f8c3 2080 	str.w	r2, [r3, #128]	; 0x80
+ 146:	4b3d      	ldr	r3, [pc, #244]	; (23c <SystemInit+0x170>)
+ 148:	f04f 02aa 	mov.w	r2, #170	; 0xaa
+ 14c:	f8c3 208c 	str.w	r2, [r3, #140]	; 0x8c
+ 150:	4b3a      	ldr	r3, [pc, #232]	; (23c <SystemInit+0x170>)
+ 152:	f04f 0255 	mov.w	r2, #85	; 0x55
+ 156:	f8c3 208c 	str.w	r2, [r3, #140]	; 0x8c
+ 15a:	bf00      	nop
+ 15c:	4b37      	ldr	r3, [pc, #220]	; (23c <SystemInit+0x170>)
+ 15e:	f8d3 3088 	ldr.w	r3, [r3, #136]	; 0x88
+ 162:	f003 6380 	and.w	r3, r3, #67108864	; 0x4000000
+ 166:	2b00      	cmp	r3, #0
+ 168:	d0f8      	beq.n	15c <SystemInit+0x90>
+ 16a:	4b34      	ldr	r3, [pc, #208]	; (23c <SystemInit+0x170>)
+ 16c:	f04f 0203 	mov.w	r2, #3
+ 170:	f8c3 2080 	str.w	r2, [r3, #128]	; 0x80
+ 174:	4b31      	ldr	r3, [pc, #196]	; (23c <SystemInit+0x170>)
+ 176:	f04f 02aa 	mov.w	r2, #170	; 0xaa
+ 17a:	f8c3 208c 	str.w	r2, [r3, #140]	; 0x8c
+ 17e:	4b2f      	ldr	r3, [pc, #188]	; (23c <SystemInit+0x170>)
+ 180:	f04f 0255 	mov.w	r2, #85	; 0x55
+ 184:	f8c3 208c 	str.w	r2, [r3, #140]	; 0x8c
+ 188:	bf00      	nop
+ 18a:	4b2c      	ldr	r3, [pc, #176]	; (23c <SystemInit+0x170>)
+ 18c:	f8d3 3088 	ldr.w	r3, [r3, #136]	; 0x88
+ 190:	f003 7340 	and.w	r3, r3, #50331648	; 0x3000000
+ 194:	2b00      	cmp	r3, #0
+ 196:	d0f8      	beq.n	18a <SystemInit+0xbe>
+ 198:	4b28      	ldr	r3, [pc, #160]	; (23c <SystemInit+0x170>)
+ 19a:	f04f 0223 	mov.w	r2, #35	; 0x23
+ 19e:	f8c3 20a4 	str.w	r2, [r3, #164]	; 0xa4
+ 1a2:	4b26      	ldr	r3, [pc, #152]	; (23c <SystemInit+0x170>)
+ 1a4:	f04f 02aa 	mov.w	r2, #170	; 0xaa
+ 1a8:	f8c3 20ac 	str.w	r2, [r3, #172]	; 0xac
+ 1ac:	4b23      	ldr	r3, [pc, #140]	; (23c <SystemInit+0x170>)
+ 1ae:	f04f 0255 	mov.w	r2, #85	; 0x55
+ 1b2:	f8c3 20ac 	str.w	r2, [r3, #172]	; 0xac
+ 1b6:	4b21      	ldr	r3, [pc, #132]	; (23c <SystemInit+0x170>)
+ 1b8:	f04f 0201 	mov.w	r2, #1
+ 1bc:	f8c3 20a0 	str.w	r2, [r3, #160]	; 0xa0
+ 1c0:	4b1e      	ldr	r3, [pc, #120]	; (23c <SystemInit+0x170>)
+ 1c2:	f04f 02aa 	mov.w	r2, #170	; 0xaa
+ 1c6:	f8c3 20ac 	str.w	r2, [r3, #172]	; 0xac
+ 1ca:	4b1c      	ldr	r3, [pc, #112]	; (23c <SystemInit+0x170>)
+ 1cc:	f04f 0255 	mov.w	r2, #85	; 0x55
+ 1d0:	f8c3 20ac 	str.w	r2, [r3, #172]	; 0xac
+ 1d4:	bf00      	nop
+ 1d6:	4b19      	ldr	r3, [pc, #100]	; (23c <SystemInit+0x170>)
+ 1d8:	f8d3 30a8 	ldr.w	r3, [r3, #168]	; 0xa8
+ 1dc:	f403 6380 	and.w	r3, r3, #1024	; 0x400
+ 1e0:	2b00      	cmp	r3, #0
+ 1e2:	d0f8      	beq.n	1d6 <SystemInit+0x10a>
+ 1e4:	4b15      	ldr	r3, [pc, #84]	; (23c <SystemInit+0x170>)
+ 1e6:	f04f 0203 	mov.w	r2, #3
+ 1ea:	f8c3 20a0 	str.w	r2, [r3, #160]	; 0xa0
+ 1ee:	4b13      	ldr	r3, [pc, #76]	; (23c <SystemInit+0x170>)
+ 1f0:	f04f 02aa 	mov.w	r2, #170	; 0xaa
+ 1f4:	f8c3 20ac 	str.w	r2, [r3, #172]	; 0xac
+ 1f8:	4b10      	ldr	r3, [pc, #64]	; (23c <SystemInit+0x170>)
+ 1fa:	f04f 0255 	mov.w	r2, #85	; 0x55
+ 1fe:	f8c3 20ac 	str.w	r2, [r3, #172]	; 0xac
+ 202:	bf00      	nop
+ 204:	4b0d      	ldr	r3, [pc, #52]	; (23c <SystemInit+0x170>)
+ 206:	f8d3 30a8 	ldr.w	r3, [r3, #168]	; 0xa8
+ 20a:	f403 7340 	and.w	r3, r3, #768	; 0x300
+ 20e:	2b00      	cmp	r3, #0
+ 210:	d0f8      	beq.n	204 <SystemInit+0x138>
+ 212:	4b0a      	ldr	r3, [pc, #40]	; (23c <SystemInit+0x170>)
+ 214:	4a0b      	ldr	r2, [pc, #44]	; (244 <SystemInit+0x178>)
+ 216:	f8c3 20c4 	str.w	r2, [r3, #196]	; 0xc4
+ 21a:	4b08      	ldr	r3, [pc, #32]	; (23c <SystemInit+0x170>)
+ 21c:	f04f 0200 	mov.w	r2, #0
+ 220:	f8c3 21c8 	str.w	r2, [r3, #456]	; 0x1c8
+ 224:	4b05      	ldr	r3, [pc, #20]	; (23c <SystemInit+0x170>)
+ 226:	f243 023a 	movw	r2, #12346	; 0x303a
+ 22a:	601a      	str	r2, [r3, #0]
+ 22c:	4b06      	ldr	r3, [pc, #24]	; (248 <SystemInit+0x17c>)
+ 22e:	f04f 0200 	mov.w	r2, #0
+ 232:	609a      	str	r2, [r3, #8]
+ 234:	46bd      	mov	sp, r7
+ 236:	bc80      	pop	{r7}
+ 238:	4770      	bx	lr
+ 23a:	bf00      	nop
+ 23c:	400fc000 	.word	0x400fc000
+ 240:	00050063 	.word	0x00050063
+ 244:	042887de 	.word	0x042887de
+ 248:	e000ed00 	.word	0xe000ed00
+
+0000024c <UART3_Init>:
+ 24c:	b480      	push	{r7}
+ 24e:	b085      	sub	sp, #20
+ 250:	af00      	add	r7, sp, #0
+ 252:	6078      	str	r0, [r7, #4]
+ 254:	4b26      	ldr	r3, [pc, #152]	; (2f0 <UART3_Init+0xa4>)
+ 256:	681b      	ldr	r3, [r3, #0]
+ 258:	ea4f 0393 	mov.w	r3, r3, lsr #2
+ 25c:	60fb      	str	r3, [r7, #12]
+ 25e:	4b25      	ldr	r3, [pc, #148]	; (2f4 <UART3_Init+0xa8>)
+ 260:	4a24      	ldr	r2, [pc, #144]	; (2f4 <UART3_Init+0xa8>)
+ 262:	f8d2 20c4 	ldr.w	r2, [r2, #196]	; 0xc4
+ 266:	f042 7200 	orr.w	r2, r2, #33554432	; 0x2000000
+ 26a:	f8c3 20c4 	str.w	r2, [r3, #196]	; 0xc4
+ 26e:	4b21      	ldr	r3, [pc, #132]	; (2f4 <UART3_Init+0xa8>)
+ 270:	4a20      	ldr	r2, [pc, #128]	; (2f4 <UART3_Init+0xa8>)
+ 272:	f8d2 21ac 	ldr.w	r2, [r2, #428]	; 0x1ac
+ 276:	f422 2240 	bic.w	r2, r2, #786432	; 0xc0000
+ 27a:	f8c3 21ac 	str.w	r2, [r3, #428]	; 0x1ac
+ 27e:	4b1d      	ldr	r3, [pc, #116]	; (2f4 <UART3_Init+0xa8>)
+ 280:	4a1c      	ldr	r2, [pc, #112]	; (2f4 <UART3_Init+0xa8>)
+ 282:	f8d2 21ac 	ldr.w	r2, [r2, #428]	; 0x1ac
+ 286:	f8c3 21ac 	str.w	r2, [r3, #428]	; 0x1ac
+ 28a:	4b1b      	ldr	r3, [pc, #108]	; (2f8 <UART3_Init+0xac>)
+ 28c:	4a1a      	ldr	r2, [pc, #104]	; (2f8 <UART3_Init+0xac>)
+ 28e:	6812      	ldr	r2, [r2, #0]
+ 290:	f022 020f 	bic.w	r2, r2, #15
+ 294:	601a      	str	r2, [r3, #0]
+ 296:	4b18      	ldr	r3, [pc, #96]	; (2f8 <UART3_Init+0xac>)
+ 298:	4a17      	ldr	r2, [pc, #92]	; (2f8 <UART3_Init+0xac>)
+ 29a:	6812      	ldr	r2, [r2, #0]
+ 29c:	f042 020a 	orr.w	r2, r2, #10
+ 2a0:	601a      	str	r2, [r3, #0]
+ 2a2:	4b16      	ldr	r3, [pc, #88]	; (2fc <UART3_Init+0xb0>)
+ 2a4:	f04f 0283 	mov.w	r2, #131	; 0x83
+ 2a8:	731a      	strb	r2, [r3, #12]
+ 2aa:	68fb      	ldr	r3, [r7, #12]
+ 2ac:	2b00      	cmp	r3, #0
+ 2ae:	da01      	bge.n	2b4 <UART3_Init+0x68>
+ 2b0:	f103 030f 	add.w	r3, r3, #15
+ 2b4:	ea4f 1323 	mov.w	r3, r3, asr #4
+ 2b8:	461a      	mov	r2, r3
+ 2ba:	687b      	ldr	r3, [r7, #4]
+ 2bc:	fb92 f3f3 	sdiv	r3, r2, r3
+ 2c0:	60bb      	str	r3, [r7, #8]
+ 2c2:	4b0e      	ldr	r3, [pc, #56]	; (2fc <UART3_Init+0xb0>)
+ 2c4:	68ba      	ldr	r2, [r7, #8]
+ 2c6:	ea4f 2212 	mov.w	r2, r2, lsr #8
+ 2ca:	b2d2      	uxtb	r2, r2
+ 2cc:	711a      	strb	r2, [r3, #4]
+ 2ce:	4b0b      	ldr	r3, [pc, #44]	; (2fc <UART3_Init+0xb0>)
+ 2d0:	68ba      	ldr	r2, [r7, #8]
+ 2d2:	b2d2      	uxtb	r2, r2
+ 2d4:	701a      	strb	r2, [r3, #0]
+ 2d6:	4b09      	ldr	r3, [pc, #36]	; (2fc <UART3_Init+0xb0>)
+ 2d8:	f04f 0203 	mov.w	r2, #3
+ 2dc:	731a      	strb	r2, [r3, #12]
+ 2de:	4b07      	ldr	r3, [pc, #28]	; (2fc <UART3_Init+0xb0>)
+ 2e0:	f04f 0207 	mov.w	r2, #7
+ 2e4:	721a      	strb	r2, [r3, #8]
+ 2e6:	f107 0714 	add.w	r7, r7, #20
+ 2ea:	46bd      	mov	sp, r7
+ 2ec:	bc80      	pop	{r7}
+ 2ee:	4770      	bx	lr
+ 2f0:	10000000 	.word	0x10000000
+ 2f4:	400fc000 	.word	0x400fc000
+ 2f8:	4002c000 	.word	0x4002c000
+ 2fc:	4009c000 	.word	0x4009c000
+
+00000300 <UART3_Sendchar>:
+ 300:	b480      	push	{r7}
+ 302:	b083      	sub	sp, #12
+ 304:	af00      	add	r7, sp, #0
+ 306:	4603      	mov	r3, r0
+ 308:	71fb      	strb	r3, [r7, #7]
+ 30a:	bf00      	nop
+ 30c:	4b07      	ldr	r3, [pc, #28]	; (32c <UART3_Sendchar+0x2c>)
+ 30e:	7d1b      	ldrb	r3, [r3, #20]
+ 310:	b2db      	uxtb	r3, r3
+ 312:	f003 0320 	and.w	r3, r3, #32
+ 316:	2b00      	cmp	r3, #0
+ 318:	d0f8      	beq.n	30c <UART3_Sendchar+0xc>
+ 31a:	4b04      	ldr	r3, [pc, #16]	; (32c <UART3_Sendchar+0x2c>)
+ 31c:	79fa      	ldrb	r2, [r7, #7]
+ 31e:	701a      	strb	r2, [r3, #0]
+ 320:	f107 070c 	add.w	r7, r7, #12
+ 324:	46bd      	mov	sp, r7
+ 326:	bc80      	pop	{r7}
+ 328:	4770      	bx	lr
+ 32a:	bf00      	nop
+ 32c:	4009c000 	.word	0x4009c000
+
+00000330 <UART3_Getchar>:
+ 330:	b480      	push	{r7}
+ 332:	b083      	sub	sp, #12
+ 334:	af00      	add	r7, sp, #0
+ 336:	bf00      	nop
+ 338:	4b08      	ldr	r3, [pc, #32]	; (35c <UART3_Getchar+0x2c>)
+ 33a:	7d1b      	ldrb	r3, [r3, #20]
+ 33c:	b2db      	uxtb	r3, r3
+ 33e:	f003 0301 	and.w	r3, r3, #1
+ 342:	2b00      	cmp	r3, #0
+ 344:	d0f8      	beq.n	338 <UART3_Getchar+0x8>
+ 346:	4b05      	ldr	r3, [pc, #20]	; (35c <UART3_Getchar+0x2c>)
+ 348:	781b      	ldrb	r3, [r3, #0]
+ 34a:	71fb      	strb	r3, [r7, #7]
+ 34c:	79fb      	ldrb	r3, [r7, #7]
+ 34e:	4618      	mov	r0, r3
+ 350:	f107 070c 	add.w	r7, r7, #12
+ 354:	46bd      	mov	sp, r7
+ 356:	bc80      	pop	{r7}
+ 358:	4770      	bx	lr
+ 35a:	bf00      	nop
+ 35c:	4009c000 	.word	0x4009c000
+
+00000360 <UART3_PrintString>:
+ 360:	b580      	push	{r7, lr}
+ 362:	b084      	sub	sp, #16
+ 364:	af00      	add	r7, sp, #0
+ 366:	6078      	str	r0, [r7, #4]
+ 368:	f04f 0300 	mov.w	r3, #0
+ 36c:	60fb      	str	r3, [r7, #12]
+ 36e:	e00a      	b.n	386 <UART3_PrintString+0x26>
+ 370:	68fb      	ldr	r3, [r7, #12]
+ 372:	687a      	ldr	r2, [r7, #4]
+ 374:	18d3      	adds	r3, r2, r3
+ 376:	781b      	ldrb	r3, [r3, #0]
+ 378:	4618      	mov	r0, r3
+ 37a:	f7ff ffc1 	bl	300 <UART3_Sendchar>
+ 37e:	68fb      	ldr	r3, [r7, #12]
+ 380:	f103 0301 	add.w	r3, r3, #1
+ 384:	60fb      	str	r3, [r7, #12]
+ 386:	68fb      	ldr	r3, [r7, #12]
+ 388:	687a      	ldr	r2, [r7, #4]
+ 38a:	18d3      	adds	r3, r2, r3
+ 38c:	781b      	ldrb	r3, [r3, #0]
+ 38e:	2b00      	cmp	r3, #0
+ 390:	d1ee      	bne.n	370 <UART3_PrintString+0x10>
+ 392:	f107 0710 	add.w	r7, r7, #16
+ 396:	46bd      	mov	sp, r7
+ 398:	bd80      	pop	{r7, pc}
+ 39a:	bf00      	nop
+
+0000039c <main>:
+ 39c:	b580      	push	{r7, lr}
+ 39e:	b082      	sub	sp, #8
+ 3a0:	af00      	add	r7, sp, #0
+ 3a2:	f04f 0300 	mov.w	r3, #0
+ 3a6:	71fb      	strb	r3, [r7, #7]
+ 3a8:	f44f 4096 	mov.w	r0, #19200	; 0x4b00
+ 3ac:	f7ff ff4e 	bl	24c <UART3_Init>
+ 3b0:	4810      	ldr	r0, [pc, #64]	; (3f4 <main+0x58>)
+ 3b2:	f7ff ffd5 	bl	360 <UART3_PrintString>
+ 3b6:	4810      	ldr	r0, [pc, #64]	; (3f8 <main+0x5c>)
+ 3b8:	f7ff ffd2 	bl	360 <UART3_PrintString>
+ 3bc:	480f      	ldr	r0, [pc, #60]	; (3fc <main+0x60>)
+ 3be:	f7ff ffcf 	bl	360 <UART3_PrintString>
+ 3c2:	480f      	ldr	r0, [pc, #60]	; (400 <main+0x64>)
+ 3c4:	f7ff ffcc 	bl	360 <UART3_PrintString>
+ 3c8:	f7ff ffb2 	bl	330 <UART3_Getchar>
+ 3cc:	4603      	mov	r3, r0
+ 3ce:	71fb      	strb	r3, [r7, #7]
+ 3d0:	79fb      	ldrb	r3, [r7, #7]
+ 3d2:	2b59      	cmp	r3, #89	; 0x59
+ 3d4:	d106      	bne.n	3e4 <main+0x48>
+ 3d6:	480b      	ldr	r0, [pc, #44]	; (404 <main+0x68>)
+ 3d8:	f7ff ffc2 	bl	360 <UART3_PrintString>
+ 3dc:	480a      	ldr	r0, [pc, #40]	; (408 <main+0x6c>)
+ 3de:	f7ff ffbf 	bl	360 <UART3_PrintString>
+ 3e2:	e005      	b.n	3f0 <main+0x54>
+ 3e4:	4809      	ldr	r0, [pc, #36]	; (40c <main+0x70>)
+ 3e6:	f7ff ffbb 	bl	360 <UART3_PrintString>
+ 3ea:	4809      	ldr	r0, [pc, #36]	; (410 <main+0x74>)
+ 3ec:	f7ff ffb8 	bl	360 <UART3_PrintString>
+ 3f0:	e7fe      	b.n	3f0 <main+0x54>
+ 3f2:	bf00      	nop
+ 3f4:	00000484 	.word	0x00000484
+ 3f8:	000004a8 	.word	0x000004a8
+ 3fc:	000004d0 	.word	0x000004d0
+ 400:	00000504 	.word	0x00000504
+ 404:	00000524 	.word	0x00000524
+ 408:	00000528 	.word	0x00000528
+ 40c:	00000568 	.word	0x00000568
+ 410:	0000056c 	.word	0x0000056c
+
+00000414 <Default_Reset_Handler>:
+ 414:	b580      	push	{r7, lr}
+ 416:	b082      	sub	sp, #8
+ 418:	af00      	add	r7, sp, #0
+ 41a:	4b13      	ldr	r3, [pc, #76]	; (468 <zero_loop+0x1c>)
+ 41c:	607b      	str	r3, [r7, #4]
+ 41e:	4b13      	ldr	r3, [pc, #76]	; (46c <zero_loop+0x20>)
+ 420:	603b      	str	r3, [r7, #0]
+ 422:	e00b      	b.n	43c <Default_Reset_Handler+0x28>
+ 424:	687b      	ldr	r3, [r7, #4]
+ 426:	681a      	ldr	r2, [r3, #0]
+ 428:	683b      	ldr	r3, [r7, #0]
+ 42a:	601a      	str	r2, [r3, #0]
+ 42c:	683b      	ldr	r3, [r7, #0]
+ 42e:	f103 0304 	add.w	r3, r3, #4
+ 432:	603b      	str	r3, [r7, #0]
+ 434:	687b      	ldr	r3, [r7, #4]
+ 436:	f103 0304 	add.w	r3, r3, #4
+ 43a:	607b      	str	r3, [r7, #4]
+ 43c:	683a      	ldr	r2, [r7, #0]
+ 43e:	4b0c      	ldr	r3, [pc, #48]	; (470 <zero_loop+0x24>)
+ 440:	429a      	cmp	r2, r3
+ 442:	d3ef      	bcc.n	424 <Default_Reset_Handler+0x10>
+ 444:	480b      	ldr	r0, [pc, #44]	; (474 <zero_loop+0x28>)
+ 446:	490c      	ldr	r1, [pc, #48]	; (478 <zero_loop+0x2c>)
+ 448:	f04f 0200 	mov.w	r2, #0
+
+0000044c <zero_loop>:
+ 44c:	4288      	cmp	r0, r1
+ 44e:	bfb8      	it	lt
+ 450:	f840 2b04 	strlt.w	r2, [r0], #4
+ 454:	dbfa      	blt.n	44c <zero_loop>
+ 456:	f7ff fe39 	bl	cc <SystemInit>
+ 45a:	f7ff ff9f 	bl	39c <main>
+ 45e:	f107 0708 	add.w	r7, r7, #8
+ 462:	46bd      	mov	sp, r7
+ 464:	bd80      	pop	{r7, pc}
+ 466:	bf00      	nop
+ 468:	00000580 	.word	0x00000580
+ 46c:	10000000 	.word	0x10000000
+ 470:	10000004 	.word	0x10000004
+ 474:	10000004 	.word	0x10000004
+ 478:	10000004 	.word	0x10000004
+
+0000047c <ADC_IRQHandler>:
+ 47c:	b480      	push	{r7}
+ 47e:	af00      	add	r7, sp, #0
+ 480:	e7fe      	b.n	480 <ADC_IRQHandler+0x4>
+ 482:	bf00      	nop
+ 484:	79736145 	.word	0x79736145
+ 488:	74726f63 	.word	0x74726f63
+ 48c:	55207865 	.word	0x55207865
+ 490:	20545241 	.word	0x20545241
+ 494:	6d617865 	.word	0x6d617865
+ 498:	20656c70 	.word	0x20656c70
+ 49c:	6a6f7270 	.word	0x6a6f7270
+ 4a0:	0d746365 	.word	0x0d746365
+ 4a4:	0000000a 	.word	0x0000000a
+ 4a8:	3d3d3d3d 	.word	0x3d3d3d3d
+ 4ac:	3d3d3d3d 	.word	0x3d3d3d3d
+ 4b0:	3d3d3d3d 	.word	0x3d3d3d3d
+ 4b4:	3d3d3d3d 	.word	0x3d3d3d3d
+ 4b8:	3d3d3d3d 	.word	0x3d3d3d3d
+ 4bc:	3d3d3d3d 	.word	0x3d3d3d3d
+ 4c0:	3d3d3d3d 	.word	0x3d3d3d3d
+ 4c4:	3d3d3d3d 	.word	0x3d3d3d3d
+ 4c8:	0a0d3d3d 	.word	0x0a0d3d3d
+ 4cc:	00000000 	.word	0x00000000
+ 4d0:	636c6557 	.word	0x636c6557
+ 4d4:	20656d6f 	.word	0x20656d6f
+ 4d8:	74206f74 	.word	0x74206f74
+ 4dc:	65206568 	.word	0x65206568
+ 4e0:	706d6178 	.word	0x706d6178
+ 4e4:	6620656c 	.word	0x6620656c
+ 4e8:	5520726f 	.word	0x5520726f
+ 4ec:	20545241 	.word	0x20545241
+ 4f0:	74206e6f 	.word	0x74206e6f
+ 4f4:	65206568 	.word	0x65206568
+ 4f8:	63797361 	.word	0x63797361
+ 4fc:	6574726f 	.word	0x6574726f
+ 500:	000a0d78 	.word	0x000a0d78
+ 504:	79206f44 	.word	0x79206f44
+ 508:	7720756f 	.word	0x7720756f
+ 50c:	20746e61 	.word	0x20746e61
+ 510:	63206f74 	.word	0x63206f74
+ 514:	69746e6f 	.word	0x69746e6f
+ 518:	3f65756e 	.word	0x3f65756e
+ 51c:	4e2f5920 	.word	0x4e2f5920
+ 520:	00000a0d 	.word	0x00000a0d
+ 524:	000a0d59 	.word	0x000a0d59
+ 528:	6e616854 	.word	0x6e616854
+ 52c:	6f79206b 	.word	0x6f79206b
+ 530:	6f662075 	.word	0x6f662075
+ 534:	73752072 	.word	0x73752072
+ 538:	20676e69 	.word	0x20676e69
+ 53c:	20656874 	.word	0x20656874
+ 540:	79736145 	.word	0x79736145
+ 544:	74726f63 	.word	0x74726f63
+ 548:	202c7865 	.word	0x202c7865
+ 54c:	6f682069 	.word	0x6f682069
+ 550:	79206570 	.word	0x79206570
+ 554:	6520756f 	.word	0x6520756f
+ 558:	796f6a6e 	.word	0x796f6a6e
+ 55c:	20746920 	.word	0x20746920
+ 560:	0a0d293a 	.word	0x0a0d293a
+ 564:	00000000 	.word	0x00000000
+ 568:	000a0d4e 	.word	0x000a0d4e
+ 56c:	6c6c6557 	.word	0x6c6c6557
+ 570:	65687420 	.word	0x65687420
+ 574:	6f6e206e 	.word	0x6f6e206e
+ 578:	283a2074 	.word	0x283a2074
+ 57c:	00000a0d 	.word	0x00000a0d

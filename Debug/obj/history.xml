@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc 4.4.3 i686-w64-mingw32 -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -O0 -g -c -DLPC1769 -I. -Icmsis -Ilpc17xx_lib -Ilpc17xx_lib\include -Icmsis_boot">
+      <target file="core_cm3.o" lastModified="133649bfeda">
+         <source file="..\..\cmsis\core_cm3.c" lastModified="1336490159c"/>
+      </target>
+      <target file="system_LPC17xx.o" lastModified="133649bff5d">
+         <source file="..\..\cmsis_boot\system_LPC17xx.c" lastModified="133649023e2"/>
+      </target>
+      <target file="uart.o" lastModified="133649c0026">
+         <source file="..\..\lpc17xx_lib\source\uart.c" lastModified="13364945f28"/>
+      </target>
+      <target file="startup_LPC17xx.o" lastModified="133649c00fd">
+         <source file="..\..\cmsis_boot\startup\startup_LPC17xx.c" lastModified="133649023d9"/>
+      </target>
+      <target file="lpc17xx_libcfg_default.o" lastModified="133649c0159">
+         <source file="..\..\lpc17xx_lib\source\lpc17xx_libcfg_default.c" lastModified="13364901b11"/>
+      </target>
+      <target file="syscalls.o" lastModified="133649c01ea">
+         <source file="..\..\syscalls\syscalls.c" lastModified="133649012ce"/>
+      </target>
+      <target file="main.o" lastModified="133649c0098">
+         <source file="..\..\main.c" lastModified="13364945f0c"/>
+      </target>
+   </processor>
+</history>

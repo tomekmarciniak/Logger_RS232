@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="4.5.2 -O0 -nostartfiles -Map=UARTexample.map -mcpu=cortex-m3 -mthumb -LC:\CooCox\CoIDE\workspace\UARTexample --gc-sections -TC:\CooCox\CoIDE\workspace\UARTexample\link.ld -g">
+      <target file="UARTexample.elf" lastModified="133649c027e">
+         <source file="..\obj\core_cm3.o" lastModified="133649bfeda"/>
+         <source file="..\obj\system_LPC17xx.o" lastModified="133649bff5d"/>
+         <source file="..\obj\uart.o" lastModified="133649c0026"/>
+         <source file="..\obj\main.o" lastModified="133649c0098"/>
+         <source file="..\obj\startup_LPC17xx.o" lastModified="133649c00fd"/>
+         <source file="..\obj\lpc17xx_libcfg_default.o" lastModified="133649c0159"/>
+         <source file="..\obj\syscalls.o" lastModified="133649c01ea"/>
+      </target>
+   </processor>
+</history>
